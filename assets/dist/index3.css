@@ -195,14 +195,15 @@
 
 @media (max-width: 767px) {
   .header-section .header-content .header {
-    padding: 1.5rem 0;
+    padding: 0;
     width: 100%;
   }
   .header-section .header-content .header .image-wrapper {
-    width: 40%;
+    width: 34%;
   }
   .header-section .reminder-wrap {
-    margin-top: 3rem;
+    margin-top: 0;
+    padding: 12px;
   }
   .egift-section .orn-1 {
     width: 335px;
