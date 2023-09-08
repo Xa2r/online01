@@ -26,16 +26,47 @@ if (musicControl) {
 		if (bgMusic.paused == true) {
 			bgMusicPlay();
 			playPauseIcon.classList.replace(
-				"icofont-music-alt",
-				"icofont-ui-pause"
+				"icofont-pause",
+				"icofont-retro-music-disk"
 			);
+			playPauseIcon.classList.add('icn-spinner');
 		} else {
 			bgMusicPlay(false);
 			playPauseIcon.classList.replace(
-				"icofont-ui-pause",
-				"icofont-music-alt"
+				"icofont-retro-music-disk",
+				"icofont-pause"
 			);
+			playPauseIcon.classList.remove('icn-spinner');
 		}
+	});
+}
+
+// copy Clipboard
+const copyBca = $("#copy-bca");
+
+if (copyBca) {
+	copyBca.on("click", (event) => {
+		var copyTextSelect = document.getElementById("bca-num").innerHTML;
+		navigator.clipboard.writeText(copyTextSelect);
+		iziToast.success({
+			title: 'Copyed',
+			message: copyTextSelect,
+			position: 'bottomRight'
+		});
+	});
+}
+
+const copyQrisGopay = $("#copy-gopay");
+
+if (copyQrisGopay) {
+	copyQrisGopay.on("click", (event) => {
+		var copyGopay = document.getElementById("gopay-num").innerHTML;
+		navigator.clipboard.writeText(copyGopay);
+		iziToast.success({
+			title: 'Copyed',
+			message: copyGopay,
+			position: 'bottomRight'
+		});
 	});
 }
 
@@ -91,56 +122,6 @@ if (cd) {
 }
 
 gsap.registerPlugin(ScrollTrigger, Flip)
-
-// Progress Bar
-let progress = document.querySelector(".progress");
-
-// ScrollTrigger.create({
-// 	trigger: "body",
-// 	start: "top top",
-// 	end: "bottom bottom",
-// 	onUpdate: (self) => (progress.style.width = `${self.progress * 100}%`),
-// })
-
-// Egift section
-// const giftWrap = document.querySelector(".egift-section");
-// if (giftWrap) {
-// 	const tabsWrap = giftWrap.querySelector(".tabs-gift");
-// 	const tab = tabsWrap.querySelectorAll(".tab");
-// 	const glider = tabsWrap.querySelector(".glider");
-// 	tab.forEach((el) => {
-// 		el.classList.forEach((c) => {
-// 			if (c === "active") {
-// 				giftWrap.querySelectorAll(el.dataset.tab).forEach((tb) => {
-// 					tb.classList.add("show");
-// 				});
-
-// 				ScrollTrigger.refresh();
-// 			}
-// 		});
-
-// 		el.addEventListener("click", (e) => {
-// 			const flipState = Flip.getState(glider)
-
-// 			if (tabsWrap.querySelector(".active")) {
-// 				tabsWrap.querySelector(".active").classList.remove("active");
-// 				giftWrap.querySelectorAll(".show").forEach((se) => {
-// 					se.classList.remove("show");
-// 				});
-// 			}
-
-// 			el.classList.add("active");
-// 			el.appendChild(glider)
-// 			giftWrap.querySelectorAll(el.dataset.tab).forEach((tb) => {
-// 				tb.classList.add("show");
-// 			});
-
-// 			Flip.from(flipState, { duration: .25, ease: "power1.inOut" })
-
-// 			ScrollTrigger.refresh();
-// 		});
-// 	});
-// }
 
 const getLoadedIframe = (ifr) => {
 	return new Promise((resolve, reject) => {

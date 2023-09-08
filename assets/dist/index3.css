@@ -8,6 +8,31 @@
   animation-name: rotateLeftElement;
 }
 
+.music {
+  position: fixed;
+  z-index: 9;
+  width: 50px;
+  height: 50px;
+  left: 15px;
+  bottom: 15px;
+  cursor: pointer;
+}
+.music .icon-iconfont {
+  font-size: 50px;
+  display: inline-block;
+}
+.music .icn-spinner {
+  animation: spin-animation 4s linear infinite;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
 @-webkit-keyframes rotateRightElement {
   0% {
     transform: rotate(-15deg);
@@ -360,6 +385,10 @@
 .gift-wrap .flex .col-flex .gift-content .gift-name .gift-bank {
   height: 30px;
 }
+.gift-wrap .flex .col-flex .gift-content .gift-name .gift-qris {
+  padding-right: 10px;
+  height: 87px;
+}
 .gift-wrap .flex .col-flex .gift-content .gift-numb {
   padding: 1px 0 5px 15px;
   align-items: center;
@@ -368,19 +397,24 @@
   list-style-type: none;
 }
 .gift-wrap .flex .col-flex .gift-content .gift-numb .number {
+  font-family: "Roboto", sans-serif;
   --tw-text-opacity: 1;
   color: rgb(107 114 128/var(--tw-text-opacity));
   letter-spacing: 0.1em;
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-top: 0.25rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 .gift-wrap .flex .col-flex .gift-content .gift-numb .copy-pointer {
+  cursor: pointer;
   --tw-space-x-reverse: 0;
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * (1 - var(--tw-space-x-reverse)));
   --tw-text-opacity: 1;
   color: rgb(107 114 128/var(--tw-text-opacity));
   width: 1.25rem;
+}
+.gift-wrap .flex .col-flex .gift-content:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
 }

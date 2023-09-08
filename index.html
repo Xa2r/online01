@@ -15,6 +15,7 @@
 	<link href="assets/dist/vallingleaves.min.css" rel="stylesheet" />
 	<link href="assets/dist/magnific-popup.min.css" rel="stylesheet" />
 	<link href="assets/dist/colorpicker.min.css" rel="stylesheet" />
+	<link href="assets/icofont.min.css" rel="stylesheet" />
 
     <title>Undangan yuni & arifin</title>
 </head>
@@ -56,7 +57,6 @@
 			<div><img src="images/falling/leaves4.png"></div>
 		  </div>
 	</section>
-	<!-- <div class="progress" style="width: 7.44219%;"></div> -->
 	<section class="cover-section">
 		<div class="container h-100">
 			<div class="cover-wrapper h-100">
@@ -425,7 +425,7 @@
 								<div class="splide__track" id="gallery-default-track" style="padding-left: 0px; padding-right: 0px;">
 									<ul class="splide__list" id="zoom-gallery-default" style="transform: translateX(0px);">
 										<li class="splide__slide position-relative is-active is-visible" id="gallery-default-slide01" style="width: calc(100%);" tabindex="0">
-											<video class="img-gallery" autoplay loop muted>
+											<video class="img-gallery" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
 												<source src="images/galery/document_kita.mp4" class="img-gallery" alt="img-gallery" type="video/mp4">
 											</video>
 										</li>
@@ -460,7 +460,7 @@
 								<div class="splide__track" id="thumbnail-gallery-default-track" style="padding-left: 0px; padding-right: 0px;">
 									<ul class="splide__list" id="thumbnail-gallery-default-list" role="menu" aria-orientation="horizontal" style="transform: translateX(0px);">
 										<li class="splide__slide is-active is-visible" id="thumbnail-gallery-default-slide01" aria-label="Go to slide 1" aria-controls="gallery-default" role="menuitem" aria-current="true" tabindex="0" style="margin-right: 2.5px; width: calc(((100% + 2.5px) / 6) - 2.5px);">
-											<video class="img-thumbnail" autoplay loop muted>
+											<video class="img-thumbnail" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo">
 												<source src="images/galery/document_kita.mp4" class="img-thumbnail" alt="gallery" type="video/mp4">
 											</video>
 										</li>
@@ -790,11 +790,11 @@
 												<span class="title-gift">BCA</span> 
 												<h4 class="name-person">Arifin Annas Rachmadi</h4>
 											</div> 
-											<img src="images/bca.jpg" alt="logo bank" class="gift-bank">
+											<img src="images/payment/bca.jpg" alt="logo bank" class="gift-bank">
 										</div> 
 										<div class="gift-numb">
-											<p class="number">123456789</p> 
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" title="Copy" width="24px" height="24px" class="copy-pointer">
+											<p class="number" id="bca-num" value="123456789">123456789</p> 
+											<svg xmlns="http://www.w3.org/2000/svg" id="copy-bca" fill="none" viewBox="0 0 24 24" stroke="currentColor" title="Copy" width="24px" height="24px" class="copy-pointer">
 												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path>
 											</svg>
 										</div>
@@ -804,14 +804,14 @@
 									<div class="bg-white gift-content">
 										<div class="gift-name">
 											<div>
-												<span class="title-gift">BCA</span> 
+												<span class="title-gift">GoPay</span> 
 												<h4 class="name-person">Arifin Annas Rachmadi</h4>
 											</div> 
-											<img src="images/bca.jpg" alt="logo bank" class="gift-bank">
+											<img src="images/payment/qris-gopay.jpg" alt="qris-gopay" class="gift-qris">
 										</div> 
 										<div class="gift-numb">
-											<p class="number">123456789</p> 
-											<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" title="Copy" width="24px" height="24px" class="copy-pointer">
+											<p class="number" id="gopay-num" value="081329103632">081329103632</p> 
+											<svg xmlns="http://www.w3.org/2000/svg" id="copy-gopay" fill="none" viewBox="0 0 24 24" stroke="currentColor" title="Copy" width="24px" height="24px" class="copy-pointer">
 												<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path>
 											</svg>
 										</div>
@@ -976,6 +976,14 @@
 		</style>
 		<p class="footer-text">Copyright ©2023 Created by Arifin</a></p>
 	</footer>
+	
+	<audio id="musicPlayer audio" autoplay="" loop="" playsinline=""> 
+		<source src="images/music/Calum Scott - You Are The Reason.mp3" type="audio/mp3">
+	</audio>
+
+	<div class="music" id="musicControl" data-anim="zoom-in">
+		<i class="icn-spinner icofont-retro-music-disk icon-iconfont" id="playPause"></i>
+    </div>
 	<div class="modal fade show-maps" id="event2416" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lg">
 			<div class="modal-content">
@@ -1077,29 +1085,5 @@
 	<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database-compat.js"></script>
 	<!-- Contacts Store JavaScript -->
 	<script src="assets/js/firebase.js"></script>
-
-	<!-- <script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-	  
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-		  apiKey: "AIzaSyBtt6TTERFjcqOyyzQyhQokeWJqj9ehM7I",
-		  authDomain: "my-undangan.firebaseapp.com",
-		  projectId: "my-undangan",
-		  storageBucket: "my-undangan.appspot.com",
-		  messagingSenderId: "712338841902",
-		  appId: "1:712338841902:web:66ece3016d55d79b4fdabf",
-		  measurementId: "G-MGTYW0FY95"
-		};
-	  
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
-	  </script> -->
 </body>
 </html>
