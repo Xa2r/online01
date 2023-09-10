@@ -1,7 +1,7 @@
 const staticCacheName = 'site-static';
 const dynamicCacheName = 'site-dynamic-v2';
 const dataAssets = [
-  'online01/',
+  '../',
   '../online01/index.html'
 ];
 
