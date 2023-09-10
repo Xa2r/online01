@@ -2,6 +2,7 @@ const staticCacheName = 'site-static';
 const assets = [
   '/',
   '/index.html',
+  '/online01/index.html',
   '/assets/*',
   '/images/*',
   'https://*.js'
