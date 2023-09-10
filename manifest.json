@@ -1,7 +1,7 @@
 {
     "name": "undangan",
     "short_name": "undangan",
-    "start_url": "/index.html",
+    "start_url": "/online01/index.html",
     "display": "standalone",
     "background_color": "#0000",
     "theme_color": "#0000",
