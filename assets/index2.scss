@@ -1,41 +1,21 @@
 @font-face {
     font-family: "Charmonman Regular";
-    src: url("https://db.onlinewebfonts.com/t/5925f9f62334872c63ea00ab624a5df7.eot");
-    src: url("https://db.onlinewebfonts.com/t/5925f9f62334872c63ea00ab624a5df7.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/5925f9f62334872c63ea00ab624a5df7.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/5925f9f62334872c63ea00ab624a5df7.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/5925f9f62334872c63ea00ab624a5df7.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/5925f9f62334872c63ea00ab624a5df7.svg#Charmonman Regular")format("svg");
+    src: url("/assets/fonts/CharmonmanRegular.woff2")format("woff2");
 }
 
 @font-face {
     font-family: "Charmonman Bold";
-    src: url("https://db.onlinewebfonts.com/t/aaa18eae2a0a7c16dbe85a21b186f07a.eot");
-    src: url("https://db.onlinewebfonts.com/t/aaa18eae2a0a7c16dbe85a21b186f07a.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/aaa18eae2a0a7c16dbe85a21b186f07a.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/aaa18eae2a0a7c16dbe85a21b186f07a.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/aaa18eae2a0a7c16dbe85a21b186f07a.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/aaa18eae2a0a7c16dbe85a21b186f07a.svg#Charmonman Bold")format("svg");
+    src: url("/assets/fonts/CharmonmanBold.woff2")format("woff2");
 }
 
 @font-face {
     font-family: "Cormorant Garamond";
-    src: url("https://db.onlinewebfonts.com/t/0203d5e624845aacd2d8fd722b43aff1.eot");
-    src: url("https://db.onlinewebfonts.com/t/0203d5e624845aacd2d8fd722b43aff1.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/0203d5e624845aacd2d8fd722b43aff1.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/0203d5e624845aacd2d8fd722b43aff1.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/0203d5e624845aacd2d8fd722b43aff1.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/0203d5e624845aacd2d8fd722b43aff1.svg#Cormorant Garamond")format("svg");
+    src: url("/assets/fonts/CormorantGaramond.woff2")format("woff2");
 }
 
 @font-face {
   font-family: "Lateef";
-  src: url("https://db.onlinewebfonts.com/t/09400bc4b89c1605f1ccd16c0c305a8c.eot");
-  src: url("https://db.onlinewebfonts.com/t/09400bc4b89c1605f1ccd16c0c305a8c.eot?#iefix")format("embedded-opentype"),
-  url("https://db.onlinewebfonts.com/t/09400bc4b89c1605f1ccd16c0c305a8c.woff2")format("woff2"),
-  url("https://db.onlinewebfonts.com/t/09400bc4b89c1605f1ccd16c0c305a8c.woff")format("woff"),
-  url("https://db.onlinewebfonts.com/t/09400bc4b89c1605f1ccd16c0c305a8c.ttf")format("truetype"),
-  url("https://db.onlinewebfonts.com/t/09400bc4b89c1605f1ccd16c0c305a8c.svg#Lateef")format("svg");
+  src: url("/assets/fonts/Lateef.woff2")format("woff2");
 }
 
 :root {
