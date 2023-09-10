@@ -1,8 +1,8 @@
 const staticCacheName = 'site-static';
 const dynamicCacheName = 'site-dynamic-v2';
 const dataAssets = [
-  '../',
-  '../online01/index.html'
+  '/online01',
+  '/online01/index.html'
 ];
 
 // install event
