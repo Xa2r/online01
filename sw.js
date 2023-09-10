@@ -1,11 +1,8 @@
 const staticCacheName = 'site-static';
-const assets = [
-  '/',
-  '/index.html',
-  '/online01/index.html',
-  '/assets/*',
-  '/images/*',
-  'https://*.js'
+const dynamicCacheName = 'site-dynamic-v2';
+const dataAssets = [
+  'online01/',
+  '../online01/index.html'
 ];
 
 // install event
@@ -14,7 +11,7 @@ self.addEventListener('install', evt => {
     evt.waitUntil(
         caches.open(staticCacheName).then((cache) => {
         console.log('caching shell assets');
-        cache.addAll(assets);
+        cache.addAll(dataAssets);
         })
     );
 });
